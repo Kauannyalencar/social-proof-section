@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --dark-gray-mangeta: hsl(303, 10%, 53%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --light-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    font-family: "League Spartan";
+}
+
+.home {
+    height: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 0.8fr 0.5fr 1.2fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "infor . rate"
+        "review review review";
+    gap: 10px;
+    padding: 70px;
+    color: var(--dark-magenta);
+}
+
+.infor {
+    grid-area: infor;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.infor h1 {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.infor p {
+    color: var(--dark-gray-mangeta);
+    font-weight: 500;
+}
+
+.rate {
+    grid-area: rate;
+    max-width: 550px;
+    padding-top: 25px;
+}
+
+.rate-list {
+    display: grid;
+    grid-template-columns: 10px 10px 10px 1fr 10px 10px;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.imgs>img {
+    padding-right: 5px;
+}
+
+.rate-list>li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--light-magenta);
+    padding: 18px 25px;
+    border-radius: 8px;
+    font-weight: 800;
+    list-style: none;
+}
+
+.rate-list li:nth-child(1) {
+    grid-area: 1/1/1/5;
+}
+
+.rate-list li:nth-child(2) {
+    grid-area: 2/2/2/6;
+}
+
+.rate-list li:nth-child(3) {
+    grid-area: 3/3/3/7;
+}
+
+.reviews {
+    grid-area: review;
+    display: grid;
+    grid-template: 10px 10px 200px 10px 10px / repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+}
+
+.reviews li:nth-child(1) {
+    grid-area: 1/1/4/2;
+}
+
+.reviews li:nth-child(2) {
+    grid-area: 2/2/5/3;
+}
+
+.reviews li:nth-child(3) {
+    grid-area: 3/3/6/3;
+}
+
+.review {
+    max-width: 375px;
+    background-color: var(--dark-magenta);
+    color: var(--white);
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.user-infor {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-status {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 700
+}
+
+.verified {
+    color: var(--soft-pink);
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.review>p {
+    line-height: 20px;
+}
