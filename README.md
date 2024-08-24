@@ -40,7 +40,6 @@ It was my first project with CSS grid. I learned how to position each element ex
 ## Author
 - Linkedin - (https://www.linkedin.com/in/kauannyalencar/)
 - Frontend Mentor - [@Kauannyalencar](https://www.frontendmentor.io/profile/Kauannyalencar)
-
-
+- Live version (https://kauannyalencar.github.io/social-proof-section/)
 
 
